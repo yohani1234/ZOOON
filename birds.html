@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds - Animal Category</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        /* Fallback styles if Tailwind fails */
+        body { background-color: #d1fae5; padding: 20px; font-family: Arial, sans-serif; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 16px; text-align: center; }
+        .card img { width: 100%; height: 192px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; }
+        h2 { font-size: 24px; text-align: center; margin-bottom: 20px; color: #1f2937; }
+        h3 { font-size: 18px; font-weight: bold; margin-bottom: 8px; }
+        p { font-size: 14px; color: #4b5563; }
+        a.back-link { color: #1f2937; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 20px; }
+        a.back-link:hover { color: #4b5563; }
+        [data-aos] { opacity: 1 !important; transform: none !important; }
+
+        body {
+            background-image: url('images/forest.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-green-100" onload="try { AOS.init(); } catch(e) { console.log('AOS failed to initialize'); }">
+    <noscript>
+        <style>
+            [data-aos] { opacity: 1 !important; transform: none !important; }
+        </style>
+    </noscript>
+    <!-- Birds Species Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <a href="animalcatagory.html" class="back-link inline-block mb-6 text-white hover:text-blue-600 font-semibold">Back to Categories</a>
+            <h2 class="text-3xl font-bold mb-8 text-white text-center" data-aos="fade-up">Bird Species</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bird 1: Parrot -->
+                <div class="card bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4">
+                        <img src="images/parrot.jpg" 
+                             alt="Colorful parrot perched on branch" 
+                             class="w-full h-48 object-cover rounded-lg mb-3" 
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1602842506952-c0a3b7c716fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'; console.log('Failed to load Parrot image');">
+                        <h3 class="text-lg font-bold mb-2 text-center">Parrot</h3>
+                        <p class="text-black text-sm">Parrots are intelligent, colorful birds with curved beaks and zygodactyl feet (two toes forward, two back). There are about 398 species worldwide, known for their ability to mimic sounds. They primarily eat seeds, nuts, fruit, and buds.</p>
+                    </div>
+                </div>
+                <!-- Bird 2: Ostrich -->
+                <div class="card bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                    <div class="p-4">
+                        <img src="images/ostrich.jpg" 
+                             alt="Ostrich in the savanna" 
+                             class="w-full h-48 object-cover rounded-lg mb-3" 
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1602842506952-c0a3b7c716fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'; console.log('Failed to load Ostrich image');">
+                        <h3 class="text-lg font-bold mb-2 text-center">Ostrich</h3>
+                        <p class="text-black text-sm">The ostrich is the world's largest bird, reaching up to 9 feet tall and 320 pounds. Native to Africa, it can't fly but runs up to 43 mph. Ostriches lay the largest eggs of any living land animal and have three stomachs to help digest tough plant matter.</p>
+                    </div>
+                </div>
+                <!-- Bird 3: Flamingo -->
+                <div class="card bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4">
+                        <img src="images/flamingo.jpg" 
+                             alt="Flamingo standing in water" 
+                             class="w-full h-48 object-cover rounded-lg mb-3" 
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1602842506952-c0a3b7c716fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'; console.log('Failed to load Flamingo image');">
+                        <h3 class="text-lg font-bold mb-2 text-center">Flamingo</h3>
+                        <p class="text-black text-sm">Flamingos are famous for their pink plumage, which comes from carotenoid pigments in their diet of algae and crustaceans. They filter-feed with specialized beaks and often stand on one leg. There are six species found in Americas, Africa, Asia, and Europe.</p>
+                    </div>
+                </div>
+                <!-- Bird 4: Hawk -->
+                <div class="card bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="250">
+                    <div class="p-4">
+                        <img src="images/hawk.jpg" 
+                             alt="Hawk in flight" 
+                             class="w-full h-48 object-cover rounded-lg mb-3" 
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1602842506952-c0a3b7c716fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'; console.log('Failed to load Hawk image');">
+                        <h3 class="text-lg font-bold mb-2 text-center">Hawk</h3>
+                        <p class="text-black text-sm">Hawks are medium-sized diurnal birds of prey with excellent vision (8 times sharper than humans). They have sharp talons for catching prey and hooked beaks for tearing flesh. There are over 200 species worldwide, including buzzards, eagles, and kites.</p>
+                    </div>
+                </div>
+                <!-- Bird 5: Albatross -->
+                <div class="card bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4">
+                        <img src="images/Albatross.jpg" 
+                             alt="Albatross flying over ocean" 
+                             class="w-full h-48 object-cover rounded-lg mb-3" 
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1602842506952-c0a3b7c716fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'; console.log('Failed to load Albatross image');">
+                        <h3 class="text-lg font-bold mb-2 text-center">Albatross</h3>
+                        <p class="text-black text-sm">Albatrosses are among the largest flying birds with wingspans up to 11 feet. They spend most of their life soaring over oceans and can sleep while flying. These monogamous birds mate for life and have the longest incubation period of any bird (about 80 days).</p>
+                    </div>
+                </div>
+                <!-- Bird 6: Pigeon -->
+                <div class="card bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="350">
+                    <div class="p-4">
+                        <img src="images/Pigeon.jpg" 
+                             alt="Pigeon in urban setting" 
+                             class="w-full h-48 object-cover rounded-lg mb-3" 
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1602842506952-c0a3b7c716fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'; console.log('Failed to load Pigeon image');">
+                        <h3 class="text-lg font-bold mb-2 text-center">Pigeon</h3>
+                        <p class="text-black text-sm">Pigeons are stout-bodied birds with short necks and slender bills. They're incredibly adaptable, found in cities worldwide. Pigeons can recognize themselves in mirrors, remember human faces, and navigate using the Earth's magnetic fields. They were the first domesticated bird.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
